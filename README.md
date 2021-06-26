@@ -117,12 +117,36 @@ These includes:
   Eg:
   
         let selection = 'name';
-        person[selection] = "Amarnath";
+        person[selection] = 'Amarnath';
           
   3. Arrays
-  4. Functions
-
-
+     1. It can hold data of different types as well.
+     2. Both data type and the length of an array can change dynamically.
+     
+     Eg:
+     
+          let selectedColors = ['red', 'yellow'];
+          console.log(selectedColors);
+          selectedColors[2] = 2;
+          console.log(selectedColors);
+     
+     
+     When you run
+     
+          typeof(selectedColors); // Array is an "object" !!
+     
+     So array object comes with a lot of built in properties and methods like map, filter, forEach, length etc.
+     
+  5. Functions - A set of statements used to perform a specific task or calculate a value.
+      Eg:
+      
+          function greet(name) {    // This is receiving a parameter
+            console.log('Hello ' + name);
+          }
+          
+          greet('Amar');  // This is an argument
+   
+   
 ## Why is JS considered a Dynamic language?
 
 JS is considered as a dynamic language because it is dynamically typed. 
