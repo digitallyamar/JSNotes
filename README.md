@@ -2,8 +2,14 @@
 
 ## How to run JS code?
 There are two ways:
-  1. In a web browser | Eg: 2 + 2 in browser JS console
-  2. Using Node | Eg: node index.js
+  1. In a web browser
+      Eg: 
+      
+          2 + 2 // Try in browser JS console
+  3. Using Node
+      Eg:
+      
+          node index.js
 
 ---------
 
@@ -19,12 +25,16 @@ Two ways:
 #### Using var keyword
 This was the method used prior to ES6. But it has it's own set of problems and usually avoided these days.
 
-Eg: var name = 'Amar';
+Eg: 
+
+    var name = 'Amar';
 
 ### Using let keyword
 This is the preferred method since ES6.
 
-Eg: let name = 'Amar';
+Eg: 
+
+    let name = 'Amar';
 
 
 ### Rules for naming a variable
@@ -34,7 +44,98 @@ Eg: let name = 'Amar';
   3. Cannot start with a number.
   4. Cannot contain space or hyphen (-)
   5. They are case sensitive
-  6. Modern best practice is to declare different variables in their own line,
+  6. Modern best practice is to declare different variables in their own line
+
+## Constants
+
+Constants are used to store values in memory whose value is not expected to change.
+
+  Eg:
+
+    const pi = 3.1415;
+
+## Categories Of Types
+
+There are two categories:
+
+### Primitives / Value Types
+
+These includes:
+
+  1. String
+  2. Number - No separate types for integers and float. All are of type *numbers*.
+  3. Boolean
+  4. Undefined
+      1. Any variable assigned to this value is also of type "undefined". 
+      
+      Eg: 
+      
+          lastName = undefined; // typeof(lastName) is also undefined.
+      
+      2. All unitialized variables are by default set to undefined value by JS.
+  
+  5. Null
+      1. Null is of type object. 
+         
+       Eg:
+          
+          let selectedItem = null; // typeof(selectedItem) is an Object type.
+  
+  6. Symbol
+
+
+### Reference Types
+
+These includes:
+
+  1. Objects
+  
+    Eg:
+    
+      let person = {
+        name: 'Amar',
+        age: 30,
+      };
+      
+   Two ways to access properties of an obect:
+   1. Using dot notation.
+
+      Eg:
+      
+          person.name = 'Amarnath';
+     
+   This is the easiest, concise and shorter. Should be your preferred method when we know the property name.
+   
+   2. Using bracket notation
+
+      Eg:
+         
+          person['name']
+          
+  Use this when you are not sure of the property name. 
+  
+  Eg:
+  
+        let selection = 'name';
+        person[selection] = "Amarnath";
+          
+  3. Arrays
+  4. Functions
+
+
+## Why is JS considered a Dynamic language?
+
+JS is considered as a dynamic language because it is dynamically typed. 
+
+Which means for example:
+  A variable holding a string can be changed to hold a number later.
+  
+  Eg:
+  
+    let value = "red"; //Initialized to a string value
+    value = 6; // This is still valid!
+   
+
 
 ---------
 
