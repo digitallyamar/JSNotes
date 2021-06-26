@@ -1,4 +1,10 @@
 # JSNotes
+
+## How to run JS code?
+There are two ways:
+  1. In a web browser | Eg: 2 + 2 in browser JS console
+  2. Using Node | Eg: node index.js
+
 Notes and learnings about Javascript.
 
 # Asynchronous Code Execution Methods
