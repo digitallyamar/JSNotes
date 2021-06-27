@@ -264,6 +264,37 @@ Eg:
     console.log(!true); // Output: false
     console.log(!false); // Output: true
 
+##### Logical Operators with Non Boolean values
+
+If one of the operand is not boolean, it checks for it's truthy or falsey value.
+It then returns this truthy value.
+
+Eg:
+
+    console.log(false || 'Amar');   // Output: 'Amar'
+    console.log(false || 1);   // Output: 1
+    console.log(false || 1 || 2); //Output: 1 because OR returns as soon as one of the value is true or truthy! This is called short circuiting.
+
+###### What are falsy values in JS
+
+  1.  Undefined
+  2.  null
+  3.  0
+  4.  ''
+  5.  NaN
+
+So anything that is not falsey is a truthy value!
+
+But where is it used? Here is a real world example:
+
+Eg:
+
+    let userColor = undefined;
+    let defaultColor = 'green';
+    let currentColor = userColor || defaultColor;
+    console.log(currentColor);    // Output: 'green'
+
+
 
 ---------
 
