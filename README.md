@@ -322,6 +322,44 @@ Eg:
     let x = 10 + 3 * 2
     console.log(x);         // Output 16 bcoz * has higher precedence over + so it is computed first.
 
+
+## Conditional Statements
+
+JavaScript supports two conditional statements:
+
+1. If...else
+2. Switch...case
+
+### 1. If...else
+
+Syntax:
+
+    if (condition) {
+      statement
+    }
+    else if (anotherCondition) {
+      statement
+    }
+    else {
+      statement
+    } 
+
+
+### 2. Switch...case
+
+Syntax:
+
+    switch(variable) {
+      case value1:
+        statement
+        break;
+      case value2:
+        statement
+        break;
+      default:
+        statement
+    }
+
 ---------
 
 # Asynchronous Code Execution Methods
