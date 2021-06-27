@@ -198,7 +198,35 @@ Eg:
     x += 2          // This is same as x = x + 2;
 
 
+#### Comparision Operator
 
+Eg:
+
+    let x = 1;
+    
+    // Relational operators
+    console.log(x > 0);   // Compares and returns boolean value true or false. In this case the value true.
+    console.log(x >= 1);  // Still returns true.
+    console.log( x < 1);
+    console.log( x <= 1);
+    
+    // Equality operators
+    console.log(x === 1);
+    console.log(x !== 1);
+
+##### What is the difference between === and == operators?
+
+Eg:
+
+    // Strict equality operator (Checks for same Type + Value)
+    console.log(1 === 1);   // Returns true
+    console.log('1' === 1); // Returns false
+    
+    // Lose equality operator (Checks only Value)
+    console.log(1 == 1);    // Returns true
+    console.log('1' === 1); // Returns true
+    console.log(true  === 1); // Returns true
+    
 
 ---------
 
