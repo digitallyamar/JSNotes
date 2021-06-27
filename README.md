@@ -160,6 +160,20 @@ Which means for example:
     value = 6; // This is still valid!
    
 
+## Operators
+
+Javascript provides us with certain operators that we can use with variables and constants to create **expressions**.
+With these expressions we can implement logic and algorithms.
+
+### Different types of Operators in JavaScript
+
+1. Arithmetic
+2. Assignment
+3. Comparision
+4. Logical
+5. Bitwise
+
+
 
 ---------
 
