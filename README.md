@@ -173,6 +173,31 @@ With these expressions we can implement logic and algorithms.
 4. Logical
 5. Bitwise
 
+#### 1. Arithmetic Operators
+
+Eg:
+
+    let x = 10;
+    let y = 20;
+    
+    console.log(x + y);  // Addition operator
+    console.log(x - y);  // Subtraction operator
+    console.log(x * y);  // Multiplication operator
+    console.log(x / y);  // Division operator
+    console.log(x % y);  // Modulus operator
+    console.log(x ** y);  // Exponential operator (Power of operator)
+    console.log(x++);     // Increment Operator
+    console.log(x--);     // Decrement Operator
+    
+
+#### 2. Assignment operator
+
+Eg:
+
+    let x = 10;     // Assigment operator
+    x += 2          // This is same as x = x + 2;
+
+
 
 
 ---------
