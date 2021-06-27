@@ -295,6 +295,32 @@ Eg:
     console.log(currentColor);    // Output: 'green'
 
 
+#### 5. Bitwise Operators
+
+Performs logical operations at the bit level
+
+Eg:
+
+    // 1 = 00000001
+    // 2 = 00000010
+    // 3 = 00000011
+    
+    // Bitwise OR
+    console.log(1 | 2);     // Output: 3
+
+    // Bitwise AND
+    console.log(1 & 2);     // Output: 0
+    
+    // Bitwise NOT
+    console(!1);            // Output: 0
+
+
+### Operator Precedence
+
+Eg:
+
+    let x = 10 + 3 * 2
+    console.log(x);         // Output 16 bcoz * has higher precedence over + so it is computed first.
 
 ---------
 
