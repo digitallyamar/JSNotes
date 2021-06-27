@@ -360,6 +360,101 @@ Syntax:
         statement
     }
 
+
+## Loops
+
+In JS we have different kind of loops:
+
+1. For loop
+2. While loop
+3. Do...while loop
+4. For...in
+5. For...of
+
+### 1. For loop
+
+Syntax
+
+    for(initExpression; condition; incrementExpression) {
+      statements
+    }
+
+### 2. While loop
+
+Difference from for loop is that we have to declare the initExpression external to the loop
+
+Syntax
+
+    initExpression;
+    
+    while(condiion) {
+      statements
+    }
+
+## 3. Do While loop
+
+Gets executed at least once.
+
+Syntax
+
+    initExpression;
+    
+    do {
+      statements
+    } while(condition);
+
+
+## 4. For in loop
+
+Usually used to iterate over properties of an object or elements of an array (but may be not so ideal, check next for loop type for this).
+
+Eg:
+
+    const person = {
+      name: 'Amar',
+      age: 30,
+    };
+    
+    for  (let key in person)
+      console.log(key, person[key]);
+
+
+## 5. For of loop
+
+Eg:
+
+    let const colors = ['red', 'green', 'blue'];
+    
+    for (let color of colors)
+      console.log(color);
+
+## Break and continue
+
+Break keyword is used to break out of a loop
+
+Eg:
+
+    let i = 0;
+    
+    while(i <= 10) {
+      if (i === 5) break;
+      console.log(i);   // Output: 0, 1, 2, 3, 4
+      i++;
+    }
+
+Continue keyword can be used to skip a specific iteration of loop.
+
+
+Eg:
+
+    let i = 0;
+    
+    while(i <= 10) {
+      if (i % 2 === 0) continue;
+      console.log(i);   // Output: 1, 3, 5, 7, 9
+      i++;
+    }
+
 ---------
 
 # Asynchronous Code Execution Methods
