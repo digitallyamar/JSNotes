@@ -198,7 +198,7 @@ Eg:
     x += 2          // This is same as x = x + 2;
 
 
-#### Comparision Operator
+#### 3. Comparision Operator
 
 Eg:
 
@@ -226,7 +226,44 @@ Eg:
     console.log(1 == 1);    // Returns true
     console.log('1' === 1); // Returns true
     console.log(true  === 1); // Returns true
-    
+
+
+##### Ternary Operators
+
+Eg:
+
+    // If a customer has more than 100 points, they are Gold customers
+    // Else they are Silver customers
+
+    let points = 110;
+
+    let customerType = points > 100 ? "Gold" : "Silver";
+    console.log(customerType); // Output: "Gold"
+
+
+#### 4. Logical Operators
+
+JS supports 3 logical operators - Logical AND, Logical OR and Logical NOT.
+
+Eg:
+
+    // Logical AND (&&)
+    // Returns TRUE of both operands are TRUE
+    console.log(true && true); // Output: true
+    console.log(true && false); // Output: false
+
+    // Logical OR (||)
+    // Returns TRUE if atleast one of the operand is TRUE
+    console.log(true || true); // Output: true
+    console.log(true || false); // Output: true
+    console.log(false || true); // Output: true
+    console.log(false || false); // Output: false
+
+    // Logical NOT (!)
+    // Returns  opposite of the current boolean value
+    console.log(!true); // Output: false
+    console.log(!false); // Output: true
+
 
 ---------
 
